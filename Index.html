@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Samuel</title>
+    <script src="script.js"></script>
+</head>
+<body>
+   Nome: <input id="txtNome" type="text" value="Nome" onfocus="this.value='';">
+   Idade: <input id="idade" type="text" value="Idade" onfocus="this.value='';">
+   <br><br><br>
+   Masculino <input id="rdM" type="radio" ondblclick="if(this.checked){this.checked=false}">
+   <br>
+   Feminino <input id="rdF" type="radio" ondblclick="if(this.checked){this.checked=false}">
+   <br>
+   Outro <input id="rdO" type="radio" ondblclick="if(this.checked){this.checked=false}">
+   <br><br><br>
+    País: <select id="SelPais">
+        <option value="Brasil">Brasil</option>
+        <option value="Franca">França</option>
+        <option value="Angola">Angola</option>
+        <option value="Roma">Roma</option>
+    </select>
+
+    <input type="button" id="result" value="enviar" onclick="enviar();"/>
+
+    <div id="dvResultado" value="enviar" >
+        
+    </div>
+</body>
+</html>
